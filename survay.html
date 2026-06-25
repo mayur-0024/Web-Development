@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survey 1st web</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+    <form>
+
+        <div id="head">
+            <h1>Simple Survey</h1>
+            <h4>Please take a moment to fill out this survey</h4>
+        </div>
+
+        <div id="input">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+
+        <div id="choose">
+            <h4>How satisfied are you with our service?</h4>
+        
+            <input type="radio" name="satisfaction">Satisfied
+            <br>
+            <input type="radio" name="satisfaction">Neutral
+            <br>
+            <input type="radio" name="satisfaction">Dissatisfied
+            <br>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

@@ -1,28 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+
     <style>
-        .bar{
-            display: flex;
-            justify-content: space-around;
-            padding: 15px;
-            background-color: aqua;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
         }
 
-        .bar a{
-            color: black;
+        body{
+            background-color: lightgray;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background-color: black;
+            padding: 20px;
+        }
+
+        nav h1{
+            color: white;
+            margin-right: 80px;
+        }
+
+        nav a{
+            color: white;
             text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover{
+            transform: translateY(-3px) scale(1.1);
+            transition: 0.3s;
+            color: cyan;
+        }
+
+        .home{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .text{
+            margin-top: 50px;
+        }
+
+        .text h1{
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+
+        .box{
+            background-color: white;
+            margin: 40px;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .box h2{
+            margin-bottom: 20px;
+        }
+
+        .box p{
+            margin-bottom: 10px;
         }
     </style>
+
 </head>
+
 <body>
-    <div class="bar">
+
+    <nav>
+        <h1>My Portfolio</h1>
+
         <a href="#">Home</a>
-        <a href="#">Contact us</a>
-        <a href="#">About us</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact Me</a>
+    </nav>
+
+    <div class="home">
+        <div class="text">
+            <h1>Mayur Kudale</h1>
+            <p>
+                I am learning web development.
+            </p>
+        </div>
+
+        <div class="pic">
+            <img src="student.png" width="250px">
+        </div>
     </div>
+
+    <div class="box">
+        <h2>About Me</h2>
+        <p>
+            I like coding and making websites.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>My Info</h2>
+        <p>Age: 18</p>
+        <p>City: Pune</p>
+        <p>Education: Polytechnic Computer</p>
+    </div>
+
+    <div class="box">
+        <h2>Contact Me</h2>
+        <p>Email: ABCD_1234@gmail.com</p>
+        <p>Phone: 1234567890</p>
+    </div>
+
 </body>
 </html>

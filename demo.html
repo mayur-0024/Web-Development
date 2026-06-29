@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            display: inline-block;
+            margin: 20px;
+            background-color: lightblue;
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            border: 2px solid blue;
+            box-shadow: 10px 10px 20px black;
+        }
+
+        .box:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        .img{
+            display: flex;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .img:hover{
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="img">
+        <img src="student.png" width="200px">
+    </div>
+</body>
+</html>
